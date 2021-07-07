@@ -1,5 +1,7 @@
 # Laravel & Google Drive Storage
 
+[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/R6R3UQ8V)
+
 #### Demo project with Laravel 5.4
 
 Look at the commit history to see each of the steps I have taken to set this up.
@@ -19,7 +21,7 @@ This will also install only [one additional package](https://github.com/nao-pon/
 "nao-pon/flysystem-google-drive": "~1.1"
 ```
 
-I have included a [GoogleDriveServiceProvider](app/Providers/GoogleDriveServiceProvider.php) which I have added to the `providers` array in [`config/app.php`](config/app.php), and added a `google` disk in [`config/filesystems.php`](config/filesystems.php):
+I have included [GoogleDriveAdapter](app/Providers/GoogleDriveAdapter.php) and [GoogleDriveServiceProvider](app/Providers/GoogleDriveServiceProvider.php) which I have added to the `providers` array in [`config/app.php`](config/app.php), and added a `google` disk in [`config/filesystems.php`](config/filesystems.php):
 
 ```php
 'disks' => [
